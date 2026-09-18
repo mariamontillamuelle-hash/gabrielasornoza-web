@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surinder Thakur · AI Product Designer (clon)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Mukta:wght@400;500;600;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="topbar">
+  <nav class="navpill" id="navpill">
+    <a href="#" class="brand">
+      <img src="https://www.surinder.design/assets/v2/logo-v1.svg" alt="" class="brand-logo">
+      <span class="brand-text">
+        <strong>Gabriela Sornoza</strong>
+      </span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#process">Proceso</a></li>
+      <li><a href="#pricing">Precios</a></li>
+      <li><a href="#testimonials">Testimonios</a></li>
+    </ul>
+  </nav>
+  <div class="topbar-icons">
+    <a href="mailto:hey@surinder.design" class="icon-circle" aria-label="Email me">✉</a>
+    <a href="https://wa.me/34653707149" class="icon-circle" aria-label="WhatsApp me">☎</a>
+    <a href="https://www.instagram.com/gabrielasornoza_rrhh/" target="_blank" rel="noopener" class="icon-circle" aria-label="Instagram">📷</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== HERO =====
+       Coordenadas calcadas del sitio real (getBoundingClientRect en desktop,
+       contenedor de 1440px máx): columna de texto en left:122px/top:148px
+       ancho 570px; retrato absolute bottom:0 right:4% ancho 480px; badge
+       giratorio 150x150 en bottom:85px right:99px, superpuesto a la foto. -->
+  <section class="hero reveal">
+    <div class="hero-stage">
+      <div class="hero-copy">
+        <h1>No necesitas <em>otro currículum.</em></h1>
+        <p class="lead">Necesitas una estrategia para que tu experiencia tenga sentido…</p>
+        <div class="hero-cta">
+          <a href="https://calendly.com/gabrielasornoza-rrhh/reunion-asesoria" target="_blank" rel="noopener" class="btn btn-primary">Contacta conmigo</a>
+          <a href="#calculator" class="link-arrow">Cómo puedo ayudarte</a>
+        </div>
+      </div>
+      <div class="hero-portrait">
+        <img src="assets/gabriela.png" alt="Gabriela Sornoza">
+      </div>
+      <div class="spin-badge">
+        <svg viewBox="0 0 200 200" class="spin-badge-text">
+          <path id="circlePath" fill="none" d="M 100,100 m -80,0 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0"></path>
+          <text><textPath href="#circlePath">AI PRODUCT DESIGNER · AI PRODUCT DESIGNER · </textPath></text>
+        </svg>
+        <span class="spin-badge-spark">✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW I HELP ===== -->
+  <section class="section section-dark reveal" id="how-i-help">
+    <h2 class="center">Cómo puedo <em>ayudarte</em></h2>
+    <p class="section-sub">La estrategia de empleo adaptada a ti.</p>
+
+    <!-- El original NO es un acordeón: al hacer click cada tarjeta abre un
+         panel deslizante (dialog) desde la derecha, con overlay oscuro
+         detrás. Reproducido abajo con .service-dialog + main.js. -->
+    <div class="service-cards">
+      <article class="service-card" role="button" tabindex="0">
+        <button class="service-toggle" type="button" tabindex="-1" aria-hidden="true">
+          <span class="service-plus">+</span>
+        </button>
+        <div class="service-head">
+          <img src="https://www.surinder.design/assets/carousels/artboard%20(2).svg" alt="" class="service-icon">
+          <h3>CV estratégico</h3>
+        </div>
+        <p class="service-desc">Revisamos y reconstruimos tu CV para que tu experiencia, competencias y trayectoria comuniquen el valor que realmente aportas.</p>
+        <template class="service-dialog-source">
+          <p class="service-dialog-headline">Un CV que comunica el valor real de tu experiencia, no solo tu historial.</p>
+        </template>
+      </article>
+
+      <article class="service-card" role="button" tabindex="0">
+        <button class="service-toggle" type="button" tabindex="-1" aria-hidden="true">
+          <span class="service-plus">+</span>
+        </button>
+        <div class="service-head">
+          <img src="https://www.surinder.design/assets/carousels/rocket-01%20(2).svg" alt="" class="service-icon">
+          <h3>¿Tu LinkedIn no cuenta quién eres?</h3>
+        </div>
+        <p class="service-desc">Construimos un perfil que te posicione, comunique tu experiencia y te ayude a ser encontrado por las oportunidades que buscas.</p>
+        <template class="service-dialog-source">
+          <p class="service-dialog-headline">Un perfil de LinkedIn que te posicione y te haga encontrable por las oportunidades que buscas.</p>
+        </template>
+      </article>
+
+      <article class="service-card" role="button" tabindex="0">
+        <button class="service-toggle" type="button" tabindex="-1" aria-hidden="true">
+          <span class="service-plus">+</span>
+        </button>
+        <div class="service-head">
+          <img src="https://www.surinder.design/assets/carousels/rocket-01%20(1).svg" alt="" class="service-icon">
+          <h3>Acompañamiento de empleabilidad</h3>
+        </div>
+        <p class="service-desc">Trabajamos de forma conjunta tu búsqueda desde una perspectiva estratégica: creación de CV optimizado, identificar tu objetivo profesional, entrevistas, posicionamiento, candidatura, networking y próximos pasos.</p>
+        <template class="service-dialog-source">
+          <p class="service-dialog-headline">Acompañamiento estratégico en todo tu proceso de búsqueda de empleo, de principio a fin.</p>
+        </template>
+      </article>
+    </div>
+
+    <!-- Panel único reutilizado por las 3 tarjetas (igual que el dialog de Radix
+         del original: overlay + panel blanco de 60% de ancho deslizando desde
+         la derecha). main.js rellena el contenido según la tarjeta clicada. -->
+    <div class="service-dialog" id="serviceDialog" aria-hidden="true">
+      <div class="service-dialog-overlay" data-dialog-close></div>
+      <div class="service-dialog-panel" role="dialog" aria-modal="true" aria-labelledby="serviceDialogEyebrow">
+        <button class="service-dialog-close" type="button" data-dialog-close aria-label="Cerrar">✕</button>
+        <img src="" alt="" class="service-dialog-icon">
+        <h2 class="service-dialog-eyebrow" id="serviceDialogEyebrow"></h2>
+        <div class="service-dialog-body"></div>
+        <a href="https://calendly.com/gabrielasornoza-rrhh/reunion-asesoria" target="_blank" rel="noopener" class="btn btn-primary btn-block service-dialog-cta">Contacta conmigo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SCREENS ARE EASY ===== -->
+  <section class="section reveal" id="process">
+    <h2 class="center">Encontrar trabajo no es solo <em>cuestión de experiencia.</em></h2>
+    <p class="section-sub">También importa cómo entiendes tu trayectoria, hacia dónde quieres ir y cómo comunicas lo que puedes aportar.</p>
+
+    <div class="trio">
+      <div class="trio-card">
+        <span class="trio-icon">◎</span>
+        <h3>Experiencia</h3>
+        <p>Lo que has hecho cuenta. Tu trayectoria reúne conocimientos, habilidades y aprendizajes que pueden tener mucho más valor del que refleja un CV.</p>
+      </div>
+      <div class="trio-card">
+        <span class="trio-icon">♡</span>
+        <h3>Estrategia</h3>
+        <p>Saber qué buscas también es parte del proceso. Definir un objetivo profesional te ayuda a tomar mejores decisiones y a dirigir tus esfuerzos hacia oportunidades que realmente encajan contigo.</p>
+      </div>
+      <div class="trio-card">
+        <span class="trio-icon">✓</span>
+        <h3>Comunicación</h3>
+        <p>Tu perfil también habla por ti. CV, LinkedIn, entrevistas y networking son distintas formas de contar la misma historia profesional. La clave está en que todas transmitan lo mismo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CASE STUDIES ===== -->
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section reveal" id="testimonials">
+    <p class="center testimonial-heart" aria-hidden="true"><span class="heart-echo">♥</span><span class="heart-main">♥</span></p>
+    <h2 class="center">Testimonios</h2>
+    <p class="section-sub">Personas que gracias a seguir mi metodología ya tienen el trabajo de sus sueños.</p>
+    <div class="testimonial-marquee-wrap">
+      <div class="testimonial-marquee-track">
+        <figure class="testimonial-shot"><img src="assets/testimonios/testimonio-1.jpg" loading="lazy" alt="Testimonio de una clienta por WhatsApp"></figure>
+        <figure class="testimonial-shot"><img src="assets/testimonios/testimonio-2.jpg" loading="lazy" alt="Testimonio de una clienta por WhatsApp"></figure>
+        <figure class="testimonial-shot"><img src="assets/testimonios/testimonio-3.jpg" loading="lazy" alt="Testimonio de una clienta por WhatsApp"></figure>
+        <figure class="testimonial-shot"><img src="assets/testimonios/testimonio-4.jpg" loading="lazy" alt="Testimonio de una clienta por WhatsApp"></figure>
+        <figure class="testimonial-shot"><img src="assets/testimonios/testimonio-5.jpg" loading="lazy" alt="Testimonio de una clienta por WhatsApp"></figure>
+        <figure class="testimonial-shot"><img src="assets/testimonios/testimonio-6.jpg" loading="lazy" alt="Testimonio de una clienta por WhatsApp"></figure>
+        <figure class="testimonial-shot" aria-hidden="true"><img src="assets/testimonios/testimonio-1.jpg" loading="lazy" alt=""></figure>
+        <figure class="testimonial-shot" aria-hidden="true"><img src="assets/testimonios/testimonio-2.jpg" loading="lazy" alt=""></figure>
+        <figure class="testimonial-shot" aria-hidden="true"><img src="assets/testimonios/testimonio-3.jpg" loading="lazy" alt=""></figure>
+        <figure class="testimonial-shot" aria-hidden="true"><img src="assets/testimonios/testimonio-4.jpg" loading="lazy" alt=""></figure>
+        <figure class="testimonial-shot" aria-hidden="true"><img src="assets/testimonios/testimonio-5.jpg" loading="lazy" alt=""></figure>
+        <figure class="testimonial-shot" aria-hidden="true"><img src="assets/testimonios/testimonio-6.jpg" loading="lazy" alt=""></figure>
+      </div>
+    </div>
+    <p class="center"><a href="https://calendly.com/gabrielasornoza-rrhh/reunion-asesoria" target="_blank" rel="noopener" class="btn btn-primary">Contacta conmigo</a></p>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section class="section section-dark reveal" id="pricing">
+    <h2 class="center">Empecemos ya</h2>
+    <p class="section-sub">Si quieres empezar ahora esta es la ruta:</p>
+
+    <div class="price-toggle">
+      <button type="button" class="price-toggle-btn active" data-mode="design">Design only</button>
+      <button type="button" class="price-toggle-btn" data-mode="code">Design + code</button>
+    </div>
+
+    <div class="price-grid">
+      <article class="price-card">
+        <span class="price-flag">✦ IN DEMAND</span>
+        <h3>CV estratégico</h3>
+        <p class="price-desc">Revisamos y reconstruimos tu CV para que tu experiencia, competencias y trayectoria comuniquen el valor que realmente aportas.</p>
+        <a href="https://calendly.com/gabrielasornoza-rrhh/reunion-asesoria" target="_blank" rel="noopener" class="btn btn-outline btn-block">Agendar llamada</a>
+      </article>
+
+      <article class="price-card price-card-featured">
+        <span class="price-flag price-flag-gold">♛ MOST POPULAR</span>
+        <h3>¿Tu LinkedIn no cuenta quién eres?</h3>
+        <p class="price-desc">Construimos un perfil que te posicione, comunique tu experiencia y te ayude a ser encontrado por las oportunidades que buscas.</p>
+        <a href="https://calendly.com/gabrielasornoza-rrhh/reunion-asesoria" target="_blank" rel="noopener" class="btn btn-primary btn-block">Agendar llamada</a>
+      </article>
+
+      <article class="price-card">
+        <h3>Acompañamiento de empleabilidad</h3>
+        <p class="price-desc">Trabajamos de forma conjunta tu búsqueda desde una perspectiva estratégica: creación de CV optimizado, identificar tu objetivo profesional, simulacros de entrevistas, posicionamiento, candidatura, networking y próximos pasos.</p>
+        <a href="https://calendly.com/gabrielasornoza-rrhh/reunion-asesoria" target="_blank" rel="noopener" class="btn btn-outline btn-block">Agendar llamada</a>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="footer-top footer-top-cols">
+    <div class="footer-col footer-brand">
+      <div class="footer-logo-row">
+        <img src="https://www.surinder.design/assets/v2/logo-v1.svg" alt="" class="footer-logo">
+        <h2>Gabriela Sornoza</h2>
+      </div>
+      <a href="https://calendly.com/gabrielasornoza-rrhh/reunion-asesoria" target="_blank" rel="noopener" class="btn btn-primary footer-cta">Agendar una llamada</a>
+    </div>
+    <div class="footer-col">
+      <h3 class="footer-col-title">Contacto</h3>
+      <p><a href="https://wa.me/34653707149">+34 653 707 149</a></p>
+      <p><a href="https://wa.me/34653707149">WhatsApp</a></p>
+      <p><a href="https://www.instagram.com/gabrielasornoza_rrhh/" target="_blank" rel="noopener">Instagram</a></p>
+    </div>
+    <div class="footer-col">
+      <h3 class="footer-col-title">Navegación</h3>
+      <nav class="footer-nav footer-nav-col">
+        <a href="#">Inicio</a><a href="#process">Proceso</a><a href="#pricing">Precios</a><a href="#testimonials">Testimonios</a>
+      </nav>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2026 Gabriela Sornoza. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- Mobile app-style bottom nav (breakpoint < 1024px) -->
+<nav class="bottom-nav">
+  <a href="#" class="active"><span>⌂</span>Inicio</a>
+  <a href="#process"><span>▦</span>Proceso</a>
+  <a href="#pricing"><span>◈</span>Precios</a>
+</nav>
+
+<script src="main.js"></script>
+</body>
+</html>
