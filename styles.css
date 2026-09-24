@@ -15,8 +15,8 @@
   --text-muted: rgb(107, 99, 88);
   --text-on-dark: rgb(255, 255, 255);
   --text-on-dark-muted: rgba(255, 255, 255, 0.65);
-  --accent: rgb(176, 85, 47);
-  --accent-dark: rgb(140, 64, 33);
+  --accent: rgb(6, 95, 70);
+  --accent-dark: rgb(6, 78, 59);
   --accent-purple: rgb(72, 0, 167);
   --gold: rgb(214, 158, 46);
   --border-soft: rgba(26, 23, 20, 0.1);
@@ -200,7 +200,7 @@ h2 + .section-sub, h2.center + .section-sub { text-align: center; }
 .service-plus { position: absolute; right: 24px; bottom: 24px; width: 32px; height: 32px; border-radius: 50%; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
 .service-head { display: flex; flex-direction: column; align-items: flex-start; gap: 0; }
 .service-icon { width: 46px; height: 46px; filter: brightness(0) invert(1); opacity: .9; margin-bottom: 16px; }
-.service-head h3 { margin: 0 0 12px; font-size: 24px; line-height: 1.4; font-weight: 800; letter-spacing: -0.02em; }
+.service-head h3 { margin: 0 0 12px; font-size: 24px; line-height: 1.4; font-weight: 800; letter-spacing: -0.02em; min-height: 68px; display: flex; align-items: flex-end; }
 .service-desc { color: rgba(255,255,255,0.7); margin: 0; max-width: 280px; font-size: 16px; }
 
 /* ---------- how i help: dialog (panel deslizante, no acordeón) ---------- */
@@ -229,8 +229,10 @@ h2 + .section-sub, h2.center + .section-sub { text-align: center; }
 /* ---------- trio (persuasion/emotion/trust) ---------- */
 .trio { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .trio-card { background: var(--bg-card-3); border-radius: var(--radius-md); padding: 40px 28px; text-align: center; }
-.trio-icon { display: inline-flex; width: 64px; height: 64px; border-radius: 50%; align-items: center; justify-content: center; font-size: 26px; color: var(--accent); background: rgba(176,85,47,0.08); margin-bottom: 16px; }
-.trio-card p { color: var(--text-muted); font-size: 15px; }
+.trio-card { display: flex; flex-direction: column; align-items: center; }
+.trio-icon { display: inline-flex; width: 64px; height: 64px; border-radius: 50%; align-items: center; justify-content: center; font-size: 26px; color: var(--accent); background: rgba(6,95,70,0.08); margin-bottom: 16px; flex-shrink: 0; }
+.trio-card h3 { margin-bottom: 12px; }
+.trio-card p { color: var(--text-muted); font-size: 15px; margin: 0; max-width: 300px; }
 
 /* ---------- case studies ---------- */
 /* Marquee horizontal con auto-scroll infinito, igual que el "v2-marquee"
@@ -307,9 +309,6 @@ h2 + .section-sub, h2.center + .section-sub { text-align: center; }
 .cert-nav-next { right: -20px; }
 
 /* ---------- pricing ---------- */
-.price-toggle { display: flex; justify-content: center; gap: 8px; margin-bottom: 48px; }
-.price-toggle-btn { padding: 10px 24px; border-radius: 999px; border: 1px solid var(--border-soft-dark); background: transparent; color: var(--text-on-dark-muted); cursor: pointer; font-weight: 600; }
-.price-toggle-btn.active { background: #fff; color: #111; }
 .price-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: start; max-width: 1140px; margin: 0 auto; }
 .price-card { border: 1px solid var(--border-soft-dark); border-radius: var(--radius-lg); padding: 40px 24px; text-align: center; }
 .price-card-featured { background: var(--bg-dark-card); border-color: var(--gold); }
@@ -317,6 +316,7 @@ h2 + .section-sub, h2.center + .section-sub { text-align: center; }
 .price-flag-gold { border-color: var(--gold); color: var(--gold); }
 .price-card h3 { font-size: 16px; letter-spacing: 0.03em; text-transform: uppercase; }
 .price-desc { color: var(--text-on-dark-muted); font-size: 14px; margin: 12px 0 0; }
+.price-card > .btn-block { margin-top: 28px; }
 .price-scope-top { color: var(--text-on-dark-muted); font-size: 13px; margin-top: -8px; }
 .price-amount { font-size: 40px; font-weight: 800; font-family: var(--font-heading); margin: 8px 0; }
 .price-scope { color: var(--text-on-dark-muted); font-size: 13px; margin-bottom: 24px; }
@@ -346,7 +346,7 @@ h2 + .section-sub, h2.center + .section-sub { text-align: center; }
 /* ---------- about / newsletter split CTA ---------- */
 .split-cta { background: linear-gradient(135deg, var(--accent), var(--accent-dark)); border-radius: var(--radius-lg); padding: 56px; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; color: #fff; }
 .split-cta h2 { color: #fff; }
-.split-cta em { color: #ffe3d1; }
+.split-cta em { color: #c9f3e1; }
 .split-cta p { color: rgba(255,255,255,0.85); }
 .split-cta-col:first-child { border-right: 1px solid rgba(255,255,255,0.25); padding-right: 48px; }
 .newsletter-form { display: flex; gap: 8px; margin: 24px 0 12px; }
@@ -367,6 +367,7 @@ h2 + .section-sub, h2.center + .section-sub { text-align: center; }
 .footer-cta { display: inline-block; margin-top: 20px; }
 .footer-nav-col { flex-direction: column; gap: 10px; }
 .site-footer h2 { color: #fff; font-size: 20px; margin: 0; }
+.footer-brand-title { margin-bottom: 16px; }
 .footer-logo-row { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
 .footer-logo { width: 24px; height: 28px; filter: brightness(0) invert(1); }
 .ticker-line { font-size: 14px; color: rgba(255,255,255,0.75); margin: 4px 0; }
@@ -422,9 +423,6 @@ html { scroll-behavior: smooth; }
 .testimonial-shot { transition: transform .3s cubic-bezier(.22,1,.36,1); }
 .testimonial-shot img { transition: transform .5s cubic-bezier(.22,1,.36,1); }
 .testimonial-shot:hover img { transform: scale(1.08); }
-.price-toggle-btn { transition: transform .2s ease; }
-.price-toggle-btn:hover { transform: translateY(-2px); }
-
 /* ---------- responsive ---------- */
 @media (max-width: 900px) {
   .hero-grid { grid-template-columns: 1fr; }

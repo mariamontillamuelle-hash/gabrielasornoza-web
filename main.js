@@ -121,20 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ---------------------------------------------------------------------
-   * 4) Toggle de pricing (Design only / Design + code).
-   *    En esta primera versión solo cambia el estado visual del toggle;
-   *    los precios "+code" reales se conectan cuando integremos el
-   *    contenido definitivo.
-   * ------------------------------------------------------------------- */
-  const priceToggleBtns = document.querySelectorAll('.price-toggle-btn');
-  priceToggleBtns.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      priceToggleBtns.forEach((b) => b.classList.remove('active'));
-      btn.classList.add('active');
-    });
-  });
-
-  /* ---------------------------------------------------------------------
    * 5) Tabs de categorías del FAQ.
    * ------------------------------------------------------------------- */
   const faqTabs = document.querySelectorAll('.faq-tab');
