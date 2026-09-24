@@ -149,7 +149,7 @@ h2 + .section-sub, h2.center + .section-sub { text-align: center; }
 .badge-row img { height: 100%; width: auto; object-fit: contain; transition: transform .3s; }
 .badge-row img:hover { transform: translateY(-5px); }
 .hero-portrait { position: relative; display: flex; justify-content: center; }
-.hero-portrait img { max-width: 520px; width: 100%; height: auto; object-fit: contain; background: transparent; border-radius: 0; }
+.hero-portrait img { max-width: 400px; width: 100%; height: auto; object-fit: contain; background: transparent; border-radius: 0; }
 .spin-badge { position: relative; width: 150px; height: 150px; margin: -75px auto 0; }
 .spin-badge-text { width: 100%; height: 100%; animation: spin 14s linear infinite; }
 .spin-badge-text text { font-size: 8.5px; letter-spacing: 1px; fill: var(--text-main); text-transform: uppercase; }
@@ -163,7 +163,7 @@ h2 + .section-sub, h2.center + .section-sub { text-align: center; }
   .hero h1 { font-size: 54px; line-height: 60px; }
   .hero-portrait { position: absolute; bottom: 0; right: 4%; height: 100%; width: auto; display: block; }
   .hero-portrait img {
-    width: auto; height: 112%; max-width: none; object-fit: contain; object-position: bottom;
+    width: auto; height: 88%; max-width: none; object-fit: contain; object-position: bottom;
   }
   .spin-badge { position: absolute; bottom: 60px; right: 2%; margin: 0; z-index: 3; }
 }
