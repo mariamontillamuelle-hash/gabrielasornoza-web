@@ -161,15 +161,15 @@ h2 + .section-sub, h2.center + .section-sub { text-align: center; }
   .hero-stage { max-width: 1440px; margin: 0 auto; min-height: 600px; max-height: 760px; height: calc(100svh - 140px); display: block; }
   .hero-copy { position: absolute; left: 122px; top: 50%; transform: translateY(-50%); width: 480px; z-index: 2; }
   .hero h1 { font-size: 54px; line-height: 60px; }
-  .hero-portrait { position: absolute; bottom: 0; right: 6%; height: 100%; width: auto; display: flex; align-items: flex-end; justify-content: flex-end; }
+  .hero-portrait { position: absolute; bottom: 0; right: 12%; height: 100%; width: auto; display: flex; align-items: flex-end; justify-content: flex-end; }
   .hero-portrait img {
     width: auto; height: 86%; max-width: none; object-fit: contain; object-position: bottom;
   }
-  .spin-badge { position: absolute; bottom: 60px; right: 7%; margin: 0; z-index: 3; }
+  .spin-badge { position: absolute; bottom: 60px; right: 13%; margin: 0; z-index: 3; }
 }
 @media (min-width: 1280px) {
   .hero-copy { left: 150px; }
-  .hero-portrait { right: 9%; }
+  .hero-portrait { right: 15%; }
 }
 
 .stats-bar { display: flex; margin-top: 72px; border-top: 1px solid var(--border-soft); padding-top: 32px; position: relative; }
